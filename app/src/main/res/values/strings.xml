@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Bordima</string>
+    <string name="app_name">Boardima</string>
+    <string name="Logo">TODO</string>
+    <string name="let_s_pick_a_boarding">Let\'s pick a boarding…</string>
+    <string name="nation_wide_boarding_and_service_app">Nation wide boarding and service app</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="string_dashboard">Dashboard</string>
 </resources>
