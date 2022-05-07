@@ -3,5 +3,7 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/aladin</item>
         <item>@font/amarante</item>
+        <item>@font/antic</item>
+        <item>@font/baloo</item>
     </array>
 </resources>

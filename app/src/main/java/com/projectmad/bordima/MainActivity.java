@@ -1,10 +1,14 @@
 package com.projectmad.bordima;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Pair;
+import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -12,8 +16,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
-    private static int SPLASH_SCREEN = 5000;
 
     //variables
     Animation topAnim, bottomAnim;
@@ -39,14 +41,15 @@ public class MainActivity extends AppCompatActivity {
         textView.setAnimation(bottomAnim);
         textView2.setAnimation(bottomAnim);
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-               Intent intent = new Intent(MainActivity.this,Dashboard.class);
-               startActivity(intent);
-               finish();
-            }
-        },SPLASH_SCREEN);
+        int SPLASH_SCREEN = 5000;
+        new Handler().postDelayed(() -> {
+           Intent intent = new Intent(MainActivity.this,Login.class);
+           Pair[] pairs = new Pair[1];
+           pairs[0] = new Pair<View,String>(imageView,"logo_image");
+
+           ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,pairs);
+           startActivity(intent,options.toBundle());
+        }, SPLASH_SCREEN);
     }
 
 
