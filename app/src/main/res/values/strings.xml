@@ -1,31 +1,9 @@
 <resources>
-    <string name="app_name">Boardima</string>
-    <string name="Logo">TODO</string>
-    <string name="let_s_pick_a_boarding">Let\'s pick a boarding…</string>
-    <string name="nation_wide_boarding_and_service_app">Nation wide boarding and service app</string>
-    <string name="dashboard">Dashboard</string>
-    <string name="string_dashboard">Dashboard</string>
-    <string name="hello_there_welcome_back">HELLO THERE, WELCOME BACK</string>
-    <string name="logo">TODO</string>
-    <string name="sign_in_to_continue">Sign In to continue</string>
-    <string name="user_name">hint</string>
+    <string name="app_name">Bordima</string>
+    <string name="hi">Hi!</string>
+    <string name="enter_user_name">Enter User Name</string>
     <string name="password">Password</string>
-    <string name="username">Username</string>
-    <string name="forget_password">FORGET PASSWORD?</string>
-    <string name="go">GO</string>
-    <string name="new_user_sign_up">NEW USER? SIGN UP</string>
-    <string name="WELCOME">WELCOME</string>
-    <string name="SignUp_to_pick_your_boarding_or_service">SignUp_to_pick_your_boarding_or_service</string>
-    <string name="signup_to_pick_your_boarding_or_service">SignUp to pick your boarding or service</string>
-    <string name="usename">hint</string>
-    <string name="email">hint</string>
-    <string name="reenterpassword">hint</string>
-    <string name="password1">hint</string>
-    <string name="password2">password2</string>
-    <string name="user_name1">User name</string>
-    <string name="email1">Email</string>
-    <string name="re_enter_password">Re-enter password</string>
-    <string name="re_type_password">Re-Type Password</string>
-    <string name="already_have_an_account">ALREADY HAVE AN ACCOUNT</string>
-    <string name="already_have_an_account_login">ALREADY HAVE AN ACCOUNT? LOGIN</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="new_user_register_here">New User ? Register Here</string>
 </resources>
