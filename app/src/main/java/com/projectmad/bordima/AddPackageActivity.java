@@ -52,8 +52,8 @@ public class AddPackageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_package);
 
-        PackageImagesRef = FirebaseStorage.getInstance().getReference().child("Product Images");
-        PackageRef = FirebaseDatabase.getInstance().getReference().child("Products");
+        PackageImagesRef = FirebaseStorage.getInstance().getReference().child("Package Images");
+        PackageRef = FirebaseDatabase.getInstance().getReference().child("Package");
 
         PublishBtn = (Button) findViewById(R.id.ServicePublishBtn);
         InputPackageImage = (ImageView) findViewById(R.id.PackageImageBtn);
@@ -112,7 +112,7 @@ public class AddPackageActivity extends AppCompatActivity {
 
         if (ImageUri == null)
         {
-            Toast.makeText(this, "Product image is mandatory...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Package image is mandatory...", Toast.LENGTH_SHORT).show();
         }
 
         else if (TextUtils.isEmpty(Price))
@@ -133,8 +133,8 @@ public class AddPackageActivity extends AppCompatActivity {
 
     private void StorePackageInformation()
     {
-        loadingBar.setTitle("Add New Product");
-        loadingBar.setMessage("Dear Admin, please wait while we are adding the new product.");
+        loadingBar.setTitle("Add New Package");
+        loadingBar.setMessage("please wait while we are adding the new package.");
         loadingBar.setCanceledOnTouchOutside(false);
         loadingBar.show();
 
@@ -166,7 +166,7 @@ public class AddPackageActivity extends AppCompatActivity {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot)
             {
-                Toast.makeText(AddPackageActivity.this, "Product Image uploaded Successfully...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AddPackageActivity.this, "Package cover photo uploaded Successfully...", Toast.LENGTH_SHORT).show();
 
                 Task<Uri> urlTask = uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                     @Override
@@ -188,7 +188,7 @@ public class AddPackageActivity extends AppCompatActivity {
                         {
                             downloadImageUrl = task.getResult().toString();
 
-                            Toast.makeText(AddPackageActivity.this, "got the Product image Url Successfully...", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(AddPackageActivity.this, "got the package cover photo Url Successfully...", Toast.LENGTH_SHORT).show();
 
                             SaveProductInfoToDatabase();
                         }
@@ -221,7 +221,7 @@ public class AddPackageActivity extends AppCompatActivity {
                             startActivity(intent);
 
                             loadingBar.dismiss();
-                            Toast.makeText(AddPackageActivity.this, "Product is added successfully..", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(AddPackageActivity.this, "Package is added successfully..", Toast.LENGTH_SHORT).show();
                         }
                         else
                         {

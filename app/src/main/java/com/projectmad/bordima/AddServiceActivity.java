@@ -51,8 +51,8 @@ public class AddServiceActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_service);
 
         CategoryName = getIntent().getExtras().get("category").toString();
-        ServiceImagesRef = FirebaseStorage.getInstance().getReference().child("Product Images");
-        ServiceRef = FirebaseDatabase.getInstance().getReference().child("Products");
+        ServiceImagesRef = FirebaseStorage.getInstance().getReference().child("Service Images");
+        ServiceRef = FirebaseDatabase.getInstance().getReference().child("Service");
 
         Toast.makeText(this, CategoryName, Toast.LENGTH_SHORT).show();
 
@@ -107,7 +107,7 @@ public class AddServiceActivity extends AppCompatActivity {
 
         if (ImageUri == null)
         {
-            Toast.makeText(this, "Product image is mandatory...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Service image is mandatory...", Toast.LENGTH_SHORT).show();
         }
         else if (TextUtils.isEmpty(Description))
         {
@@ -131,8 +131,8 @@ public class AddServiceActivity extends AppCompatActivity {
 
     private void StoreServiceInformation()
     {
-        loadingBar.setTitle("Add New Product");
-        loadingBar.setMessage("Dear Admin, please wait while we are adding the new product.");
+        loadingBar.setTitle("Add New Service");
+        loadingBar.setMessage("please wait while we are adding the new service.");
         loadingBar.setCanceledOnTouchOutside(false);
         loadingBar.show();
 
@@ -164,7 +164,7 @@ public class AddServiceActivity extends AppCompatActivity {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot)
             {
-                Toast.makeText(AddServiceActivity.this, "Product Image uploaded Successfully...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AddServiceActivity.this, "Service image uploaded Successfully...", Toast.LENGTH_SHORT).show();
 
                 Task<Uri> urlTask = uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                     @Override
@@ -186,7 +186,7 @@ public class AddServiceActivity extends AppCompatActivity {
                         {
                             downloadImageUrl = task.getResult().toString();
 
-                            Toast.makeText(AddServiceActivity.this, "got the Product image Url Successfully...", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(AddServiceActivity.this, "got the service image Url Successfully...", Toast.LENGTH_SHORT).show();
 
                             SaveProductInfoToDatabase();
                         }
