@@ -3,17 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.267" />
-        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/drawable/progressbar.xml" value="0.2555" />
-        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_add_package.xml" value="0.2" />
-        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_add_packages.xml" value="0.25" />
-        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_add_service.xml" value="0.25" />
-        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_registration.xml" value="0.264" />
-        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_service.xml" value="0.20521590423257802" />
-        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_service_view.xml" value="0.25" />
-        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/service_view.xml" value="0.25" />
+        <entry key="..\:/Bordima App/Bordima/app/src/main/res/layout/activity_dashboard.xml" value="0.264" />
+        <entry key="..\:/Bordima App/Bordima/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Bordima App/Bordima/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Bordima App/Bordima/app/src/main/res/layout/activity_signup.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_add_package.xml" value="0.264" />
+        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_add_service.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>
   </component>
@@ -22,5 +18,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>

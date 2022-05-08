@@ -26,8 +26,8 @@
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:paddingLeft="20dp"
-        android:text="Package Name"
-        android:textColor="@color/btn_primary"
+        android:hint="Package Name"
+        android:textColorHint="@color/btn_primary"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,8 +41,8 @@
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:paddingLeft="20dp"
-        android:text="Price"
-        android:textColor="@color/btn_primary"
+        android:hint="Price"
+        android:textColorHint="@color/btn_primary"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,8 +56,8 @@
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:paddingLeft="20dp"
-        android:text="Package Cover Photo"
-        android:textColor="@color/btn_primary"
+        android:hint="Package Cover Photo"
+        android:textColorHint="@color/btn_primary"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,7 +83,7 @@
         app:layout_constraintVertical_bias="0.564" />
 
     <Button
-        android:id="@+id/ServicePublish"
+        android:id="@+id/ServicePublishBtn"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/btn_primary"
@@ -97,5 +97,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.891" />
+
+    <ImageView
+        android:id="@+id/PackageImageBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
