@@ -77,8 +77,6 @@ public class AddServiceActivity extends AppCompatActivity {
         galleryIntent.setType("image/*");
         startActivityForResult(galleryIntent, GalleryPick);
     }
-
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
@@ -90,8 +88,6 @@ public class AddServiceActivity extends AppCompatActivity {
             InputServiceImage.setImageURI(ImageUri);
         }
     }
-
-
     private void ValidateProductData()
     {
         Description = InputServiceDescription.getText().toString();
@@ -101,32 +97,29 @@ public class AddServiceActivity extends AppCompatActivity {
 
         if (TextUtils.isEmpty(ServiceName))
         {
-            Toast.makeText(this, "Please enter service name...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please enter service name", Toast.LENGTH_SHORT).show();
         }
         else if (ImageUri == null)
         {
-            Toast.makeText(this, "Service image is mandatory...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Service image is mandatory", Toast.LENGTH_SHORT).show();
         }
         else if (TextUtils.isEmpty(Description))
         {
-            Toast.makeText(this, "Please write service description...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please write service description", Toast.LENGTH_SHORT).show();
         }
         else if (TextUtils.isEmpty(Location))
         {
-            Toast.makeText(this, "Please enter location...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please enter location", Toast.LENGTH_SHORT).show();
         }
         else if (TextUtils.isEmpty(ContactNo))
         {
-            Toast.makeText(this, "Please enter contact number...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please enter contact number", Toast.LENGTH_SHORT).show();
         }
         else
         {
             StoreServiceInformation();
         }
     }
-
-
-
     private void StoreServiceInformation()
     {
         loadingBar.setTitle("Add New Service");
@@ -163,7 +156,7 @@ public class AddServiceActivity extends AppCompatActivity {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot)
             {
-                Toast.makeText(AddServiceActivity.this, "Product Image uploaded Successfully...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AddServiceActivity.this, "Service cover photo uploaded Successfully", Toast.LENGTH_SHORT).show();
 
                 Task<Uri> urlTask = uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                     @Override
@@ -185,7 +178,7 @@ public class AddServiceActivity extends AppCompatActivity {
                         {
                             downloadImageUrl = task.getResult().toString();
 
-                            Toast.makeText(AddServiceActivity.this, "got the Product image Url Successfully...", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(AddServiceActivity.this, "got the service image Url Successfully", Toast.LENGTH_SHORT).show();
 
                             SaveProductInfoToDatabase();
                         }
@@ -199,18 +192,18 @@ public class AddServiceActivity extends AppCompatActivity {
 
     private void SaveProductInfoToDatabase()
     {
-        HashMap<String, Object> productMap = new HashMap<>();
-        productMap.put("pid", ServiceRandomKey);
-        productMap.put("date", saveCurrentDate);
-        productMap.put("time", saveCurrentTime);
-        productMap.put("sname", ServiceName);
-        productMap.put("category", CategoryName);
-        productMap.put("simage", downloadImageUrl);
-        productMap.put("sdescription", Description);
-        productMap.put("location", Location);
-        productMap.put("contactno", ContactNo);
+        HashMap<String, Object> serviceMap = new HashMap<>();
+        serviceMap.put("pid", ServiceRandomKey);
+        serviceMap.put("date", saveCurrentDate);
+        serviceMap.put("time", saveCurrentTime);
+        serviceMap.put("sname", ServiceName);
+        serviceMap.put("category", CategoryName);
+        serviceMap.put("simage", downloadImageUrl);
+        serviceMap.put("sdescription", Description);
+        serviceMap.put("location", Location);
+        serviceMap.put("contactno", ContactNo);
 
-        ServiceRef.child(ServiceRandomKey).updateChildren(productMap)
+        ServiceRef.child(ServiceRandomKey).updateChildren(serviceMap)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task)

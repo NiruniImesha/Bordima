@@ -19,6 +19,15 @@ public class CategoryActivity extends AppCompatActivity {
         foodBtn = (Button) findViewById(R.id.btnFood);
         laundryBtn = (Button) findViewById(R.id.btnLaundry);
 
+        bordingHouseBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CategoryActivity.this,AddBoardingActivity.class);
+                intent.putExtra("category","Boarding");
+                startActivity(intent);
+            }
+        });
+
         foodBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

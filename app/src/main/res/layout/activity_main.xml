@@ -18,8 +18,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        android:contentDescription="@string/logo" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView1"
@@ -45,8 +44,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.214"
-        android:contentDescription="@string/boarding" />
+        app:layout_constraintVertical_bias="0.214" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -58,8 +56,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.514"
-        android:contentDescription="@string/food" />
+        app:layout_constraintVertical_bias="0.514" />
 
     <Button
         android:id="@+id/btnFood"
@@ -68,7 +65,7 @@
         android:backgroundTint="@color/btn_primary"
         android:text="@string/food"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,8 +84,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.849"
-        android:contentDescription="@string/laundry" />
+        app:layout_constraintVertical_bias="0.849" />
 
     <Button
         android:id="@+id/btnLaundry"
@@ -97,7 +93,7 @@
         android:backgroundTint="@color/btn_primary"
         android:text="@string/laundry"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -113,7 +109,7 @@
         android:backgroundTint="@color/btn_primary"
         android:text="@string/bording_house"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
