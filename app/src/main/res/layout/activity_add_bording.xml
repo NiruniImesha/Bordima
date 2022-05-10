@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBordingActivity">
+
+
+    <EditText
+        android:id="@+id/BordingLocation"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Location"
+        android:inputType="textUri"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.03"
+        android:text="POST BOADING AD HERE"
+        android:textColor="@color/btn_primary"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <EditText
+        android:id="@+id/BedRooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="BedRooms"
+        android:inputType="textLongMessage"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.399" />
+
+    <EditText
+        android:id="@+id/BordingContactNo"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Contact Number"
+        android:inputType="textUri"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <EditText
+        android:id="@+id/BordingPrice"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Price"
+        android:inputType="textLongMessage"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727" />
+
+    <ImageView
+        android:id="@+id/BordingImageBtn"
+        android:layout_width="348dp"
+        android:layout_height="76dp"
+        android:background="@drawable/camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272" />
+
+
+
+    <EditText
+        android:id="@+id/BordingTitle"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Title"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <EditText
+        android:id="@+id/BordingDescription"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Description"
+        android:inputType="textLongMessage"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.832" />
+
+
+    <EditText
+        android:id="@+id/BathRooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="BathRooms"
+        android:inputType="textLongMessage"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.399" />
+
+    <EditText
+        android:id="@+id/Kitchens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Kitchens"
+        android:inputType="textLongMessage"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.399" />
+
+    <Button
+        android:id="@+id/PostBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/btn_primary"
+        android:text="POST"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
