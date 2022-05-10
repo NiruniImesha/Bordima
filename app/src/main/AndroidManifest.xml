@@ -15,14 +15,22 @@
         android:theme="@style/Theme.Bordima"
         tools:replace="android:appComponentFactory"
         tools:targetApi="p">
+              <activity
+            android:name=".AddPackageActivity"
+
+        tools:replace="android:appComponentFactory">
         <activity
-            android:name=".AddBoardingActivity"
+            android:name=".AddBordingActivity"
             android:exported="false" />
         <activity
             android:name=".CategoryActivity"
             android:exported="false" />
         <activity
-            android:name=".AddPackageActivity"
+            android:name=".ServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddServiceActivity"
+
             android:exported="false" />
         <activity
             android:name=".AddServiceActivity"
@@ -32,6 +40,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

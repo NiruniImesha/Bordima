@@ -22,7 +22,8 @@ public class CategoryActivity extends AppCompatActivity {
         bordingHouseBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CategoryActivity.this,AddBoardingActivity.class);
+
+                Intent intent = new Intent(CategoryActivity.this,AddBordingActivity.class);
                 intent.putExtra("category","Boarding");
                 startActivity(intent);
             }
