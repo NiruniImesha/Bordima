@@ -60,20 +60,14 @@ public class AddServiceActivity extends AppCompatActivity {
         InputServiceName = (EditText) findViewById(R.id.ServiceName);
         InputContactNo = (EditText) findViewById(R.id.ServiceContactNo);
         InputServiceImage= (ImageView) findViewById(R.id.ServiceImageBtn);
-        InputServiceDescription = (EditText) findViewById(R.id.ServiceDdescription);
+        InputServiceDescription = (EditText) findViewById(R.id.Servicedescription);
         InputLocation = (EditText) findViewById(R.id.ServiceLocation);
         loadingBar = new ProgressDialog(this);
 
         InputServiceImage.setOnClickListener(view -> OpenGallery());
 
 
-        nextbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                ValidateProductData();
-            }
-        });
+        nextbtn.setOnClickListener(view -> ValidateProductData());
     }
 
     private void OpenGallery()
@@ -105,7 +99,11 @@ public class AddServiceActivity extends AppCompatActivity {
         ContactNo = InputContactNo.getText().toString();
         Location = InputLocation.getText().toString();
 
-        if (ImageUri == null)
+        if (TextUtils.isEmpty(ServiceName))
+        {
+            Toast.makeText(this, "Please enter service name...", Toast.LENGTH_SHORT).show();
+        }
+        else if (ImageUri == null)
         {
             Toast.makeText(this, "Service image is mandatory...", Toast.LENGTH_SHORT).show();
         }
@@ -113,13 +111,13 @@ public class AddServiceActivity extends AppCompatActivity {
         {
             Toast.makeText(this, "Please write service description...", Toast.LENGTH_SHORT).show();
         }
-        else if (TextUtils.isEmpty(ServiceName))
-        {
-            Toast.makeText(this, "Please enter service name...", Toast.LENGTH_SHORT).show();
-        }
         else if (TextUtils.isEmpty(Location))
         {
             Toast.makeText(this, "Please enter location...", Toast.LENGTH_SHORT).show();
+        }
+        else if (TextUtils.isEmpty(ContactNo))
+        {
+            Toast.makeText(this, "Please enter contact number...", Toast.LENGTH_SHORT).show();
         }
         else
         {
@@ -132,7 +130,7 @@ public class AddServiceActivity extends AppCompatActivity {
     private void StoreServiceInformation()
     {
         loadingBar.setTitle("Add New Service");
-        loadingBar.setMessage("please wait while we are adding the new service.");
+        loadingBar.setMessage("please wait while we are adding the new product.");
         loadingBar.setCanceledOnTouchOutside(false);
         loadingBar.show();
 
@@ -152,6 +150,7 @@ public class AddServiceActivity extends AppCompatActivity {
         final UploadTask uploadTask = filePath.putFile(ImageUri);
 
 
+
         uploadTask.addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e)
@@ -164,7 +163,7 @@ public class AddServiceActivity extends AppCompatActivity {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot)
             {
-                Toast.makeText(AddServiceActivity.this, "Service image uploaded Successfully...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AddServiceActivity.this, "Product Image uploaded Successfully...", Toast.LENGTH_SHORT).show();
 
                 Task<Uri> urlTask = uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                     @Override
@@ -186,7 +185,7 @@ public class AddServiceActivity extends AppCompatActivity {
                         {
                             downloadImageUrl = task.getResult().toString();
 
-                            Toast.makeText(AddServiceActivity.this, "got the service image Url Successfully...", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(AddServiceActivity.this, "got the Product image Url Successfully...", Toast.LENGTH_SHORT).show();
 
                             SaveProductInfoToDatabase();
                         }

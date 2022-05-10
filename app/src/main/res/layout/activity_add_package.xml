@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:letterSpacing="0.03"
-        android:text="Publish Your Service..."
+        android:text="@string/publish_your_service"
         android:textColor="@color/btn_primary"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -25,8 +25,8 @@
         android:id="@+id/ServicePackageName"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:paddingLeft="20dp"
-        android:hint="Package Name"
+        android:hint="@string/package_name"
+        android:paddingStart="20dp"
         android:textColorHint="@color/btn_primary"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,14 +34,16 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243" />
+        app:layout_constraintVertical_bias="0.387"
+        android:inputType="text"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/ServicePrice"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:paddingLeft="20dp"
-        android:hint="Price"
+        android:hint="@string/price"
+        android:paddingStart="20dp"
         android:textColorHint="@color/btn_primary"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,31 +51,18 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.346"/>
-
-    <EditText
-        android:id="@+id/ServicePackagePhoto"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:paddingLeft="20dp"
-        android:hint="Package Cover Photo"
-        android:textColorHint="@color/btn_primary"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.453" />
+        app:layout_constraintVertical_bias="0.466"
+        android:inputType="text"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/ServiceAddPackage"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/btn_primary"
-        android:text="+"
+        android:text="@string/plus"
         android:textColor="@color/white"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,9 +76,9 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/btn_primary"
-        android:text="Publish"
+        android:text="@string/publish"
         android:textColor="@color/white"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -100,15 +89,16 @@
 
     <ImageView
         android:id="@+id/PackageImageBtn"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="219dp"
+        android:layout_height="164dp"
         android:background="@drawable/camera"
+        android:contentDescription="@string/image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.453"
+        app:layout_constraintVertical_bias="0.201"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,8 +8,12 @@
         <entry key="..\:/Bordima App/Bordima/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Bordima App/Bordima/app/src/main/res/layout/activity_signup.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_add_package.xml" value="0.264" />
-        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_add_service.xml" value="0.20521590423257802" />
-        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_add_service.xml" value="0.2" />
+        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_category.xml" value="0.1" />
+        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_dashboard.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_service.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/service_item_layout.xml" value="0.20521590423257802" />
       </map>
     </option>
   </component>
