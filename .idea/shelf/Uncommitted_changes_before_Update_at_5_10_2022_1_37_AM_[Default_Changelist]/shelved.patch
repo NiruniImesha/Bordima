@@ -1,0 +1,18 @@
+Index: app/src/main/res/layout/service_item_layout.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.cardview.widget.CardView\r\n    xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    android:layout_marginTop=\"20dp\"\r\n    android:layout_marginStart=\"15dp\"\r\n    android:layout_marginEnd=\"15dp\"\r\n    app:cardElevation=\"15dp\">\r\n\r\n    <RelativeLayout\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\">\r\n\r\n        <TextView\r\n            android:id=\"@+id/product_name\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:text=\"@string/product_name\"\r\n            android:textAlignment=\"center\"\r\n            android:textColor=\"@color/btn_primary\"\r\n            android:textSize=\"20sp\"\r\n            android:textStyle=\"bold\" />\r\n    </RelativeLayout>\r\n</androidx.cardview.widget.CardView>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/service_item_layout.xml b/app/src/main/res/layout/service_item_layout.xml
+--- a/app/src/main/res/layout/service_item_layout.xml	(revision 62548f9d05bc18e99bdca2f5b0a4df552e702062)
++++ b/app/src/main/res/layout/service_item_layout.xml	(date 1652126773575)
+@@ -23,5 +23,6 @@
+             android:textColor="@color/btn_primary"
+             android:textSize="20sp"
+             android:textStyle="bold" />
++
+     </RelativeLayout>
+ </androidx.cardview.widget.CardView>
+\ No newline at end of file

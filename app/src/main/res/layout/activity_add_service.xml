@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:letterSpacing="0.03"
-        android:text="Publish Your Service..."
+        android:text="@string/publish_your_service"
         android:textColor="@color/btn_primary"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -26,9 +26,10 @@
         android:id="@+id/ServiceName"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:hint="@string/name"
+        android:importantForAutofill="no"
         android:inputType="text"
-        android:paddingLeft="20dp"
-        android:hint="Name"
+        android:paddingStart="20dp"
         android:textColorHint="@color/btn_primary"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,15 +37,15 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.234"/>
+        app:layout_constraintVertical_bias="0.371" />
 
     <EditText
-        android:id="@+id/ServiceCoverPhoto"
+        android:id="@+id/Servicedescription"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:inputType="textUri"
-        android:paddingLeft="20dp"
-        android:hint="Cover Photo"
+        android:hint="@string/description"
+        android:inputType="textLongMessage"
+        android:paddingStart="20dp"
         android:textColorHint="@color/btn_primary"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,15 +53,15 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.351" />
+        app:layout_constraintVertical_bias="0.465" />
 
     <EditText
         android:id="@+id/ServiceContactNo"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:hint="@string/contact_number"
         android:inputType="textUri"
-        android:paddingLeft="20dp"
-        android:hint="Contact Number"
+        android:paddingStart="20dp"
         android:textColorHint="@color/btn_primary"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,15 +69,15 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.696" />
+        app:layout_constraintVertical_bias="0.667" />
 
     <EditText
         android:id="@+id/ServiceLocation"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:hint="@string/location"
         android:inputType="textUri"
-        android:paddingLeft="20dp"
-        android:hint="Location"
+        android:paddingStart="20dp"
         android:textColorHint="@color/btn_primary"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -84,51 +85,37 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.586" />
-
-    <EditText
-        android:id="@+id/ServiceDdescription"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:inputType="textLongMessage"
-        android:paddingLeft="20dp"
-        android:hint="Description"
-        android:textColorHint="@color/btn_primary"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.472" />
+        app:layout_constraintVertical_bias="0.564"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/ServiceNext"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/btn_primary"
-        android:text="Next"
+        android:text="@string/next"
         android:textColor="@color/white"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.881"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.855" />
+        app:layout_constraintVertical_bias="0.83" />
 
     <ImageView
         android:id="@+id/ServiceImageBtn"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="223dp"
+        android:layout_height="156dp"
         android:background="@drawable/camera"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.201"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
