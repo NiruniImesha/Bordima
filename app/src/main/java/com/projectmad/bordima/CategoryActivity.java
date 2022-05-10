@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class CategoryActivity extends AppCompatActivity {
 
     private Button bordingHouseBtn, foodBtn, laundryBtn;
     @Override
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         bordingHouseBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,AddBordingActivity.class);
+                Intent intent = new Intent(CategoryActivity.this,AddBordingActivity.class);
                 intent.putExtra("category","Boarding");
                 startActivity(intent);
             }
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         foodBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,AddServiceActivity.class);
+                Intent intent = new Intent(CategoryActivity.this,AddServiceActivity.class);
                 intent.putExtra("category","Food");
                 startActivity(intent);
             }
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         laundryBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,AddServiceActivity.class);
+                Intent intent = new Intent(CategoryActivity.this,AddServiceActivity.class);
                 intent.putExtra("category","Laundry");
                 startActivity(intent);
             }
