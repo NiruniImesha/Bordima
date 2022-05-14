@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.projectmad.bordima">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -10,13 +9,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bordima">
         <activity
-            android:name=".Signup"
+            android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".Register_activity"
             android:exported="false" />
         <activity
-            android:name=".Dashboard"
+            android:name=".Login_activity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -27,10 +26,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
