@@ -9,12 +9,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bordima">
         <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".Register_activity"
             android:exported="false" />
         <activity
             android:name=".Login_activity"
             android:exported="false" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -24,8 +26,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
     </application>
 
 </manifest>
