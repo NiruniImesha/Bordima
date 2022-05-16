@@ -129,6 +129,7 @@ public class WriteReviewActivity extends AppCompatActivity {
         FeedbackMap.put("rating", rating);
         FeedbackMap.put("review", review);
 
+
         FeedbackRef.child(FeedbackRandomKey).updateChildren(FeedbackMap)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
