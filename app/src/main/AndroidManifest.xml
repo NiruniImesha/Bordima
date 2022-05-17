@@ -11,13 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bordima">
         <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".Feedback_Layout"
             android:exported="false" />
         <activity
             android:name=".WriteReviewActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HomeActivity"
             android:exported="false" />
         <activity
             android:name=".Register_activity"
