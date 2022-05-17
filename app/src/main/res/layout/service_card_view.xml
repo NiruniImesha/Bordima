@@ -27,14 +27,14 @@
             android:id="@+id/serviceNameView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
             android:layout_toEndOf="@id/serviceImage"
             android:text="Service Name"
-            android:layout_marginTop="4dp"
-            android:layout_marginStart="4dp"
+            android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:textAllCaps="false"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/serviceLocationView"
@@ -56,14 +56,14 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/serviceLocationView"
-            android:layout_marginTop="2dp"
             android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
             android:layout_toEndOf="@id/serviceImage"
             android:text="Price"
             android:textAlignment="viewStart"
+            android:textAllCaps="false"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            android:textAllCaps="false"/>
+            android:textSize="16sp" />
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

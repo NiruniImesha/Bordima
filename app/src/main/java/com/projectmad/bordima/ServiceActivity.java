@@ -66,7 +66,6 @@ public class ServiceActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ServiceActivity.this,CategoryActivity.class);
-                intent.putExtra("category","Boarding");
                 startActivity(intent);
             }
         });
@@ -87,7 +86,7 @@ public class ServiceActivity extends AppCompatActivity {
                     service.setSimage(snapshot.child("simage").getValue().toString());
                     service.setSname(snapshot.child("sname").getValue().toString());
                     service.setLocation(snapshot.child("location").getValue().toString());
-                    service.setPrice(snapshot.child("price").getValue().toString());
+                    service.setSprice(snapshot.child("sprice").getValue().toString());
 
                     serviceArrayList.add(service);
                 }

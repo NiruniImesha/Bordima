@@ -34,10 +34,10 @@ import java.util.HashMap;
 
 public class AddServiceActivity extends AppCompatActivity {
 
-    private String CategoryName, Description, ContactNo, ServiceName,Location, saveCurrentDate, saveCurrentTime;
+    private String CategoryName, Description, ContactNo, ServiceName,Location,ServicePrice, saveCurrentDate, saveCurrentTime;
     private Button nextbtn;
     private ImageView InputServiceImage;
-    private EditText InputServiceName, InputServiceDescription, InputContactNo, InputLocation;
+    private EditText InputServiceName, InputServiceDescription, InputContactNo, InputLocation, InputPrice;
     private static final int GalleryPick = 1;
     private Uri ImageUri;
     private String ServiceRandomKey, downloadImageUrl;
@@ -62,6 +62,7 @@ public class AddServiceActivity extends AppCompatActivity {
         InputServiceImage= (ImageView) findViewById(R.id.ServiceImageBtn);
         InputServiceDescription = (EditText) findViewById(R.id.Servicedescription);
         InputLocation = (EditText) findViewById(R.id.ServiceLocation);
+        InputPrice = (EditText) findViewById(R.id.Serviceprice);
         loadingBar = new ProgressDialog(this);
 
         InputServiceImage.setOnClickListener(view -> OpenGallery());
@@ -94,6 +95,7 @@ public class AddServiceActivity extends AppCompatActivity {
         ServiceName = InputServiceName.getText().toString();
         ContactNo = InputContactNo.getText().toString();
         Location = InputLocation.getText().toString();
+        ServicePrice = InputPrice.getText().toString();
 
         if (TextUtils.isEmpty(ServiceName))
         {
@@ -114,6 +116,10 @@ public class AddServiceActivity extends AppCompatActivity {
         else if (TextUtils.isEmpty(ContactNo))
         {
             Toast.makeText(this, "Please enter contact number", Toast.LENGTH_SHORT).show();
+        }
+        else if (TextUtils.isEmpty(ServicePrice))
+        {
+            Toast.makeText(this, "Please enter average price for the service", Toast.LENGTH_SHORT).show();
         }
         else
         {
@@ -202,6 +208,7 @@ public class AddServiceActivity extends AppCompatActivity {
         serviceMap.put("sdescription", Description);
         serviceMap.put("location", Location);
         serviceMap.put("contactno", ContactNo);
+        serviceMap.put("sprice", ServicePrice);
 
         ServiceRef.child(ServiceRandomKey).updateChildren(serviceMap)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {

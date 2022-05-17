@@ -214,7 +214,7 @@ public class AddPackageActivity extends AppCompatActivity {
                     {
                         if (task.isSuccessful())
                         {
-                            Intent intent = new Intent(AddPackageActivity.this,MainActivity.class);
+                            Intent intent = new Intent(AddPackageActivity.this,ServiceActivity.class);
                             startActivity(intent);
 
                             loadingBar.dismiss();

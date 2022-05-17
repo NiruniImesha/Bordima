@@ -1,7 +1,6 @@
 package com.projectmad.bordima;
 
 import android.content.Context;
-import android.icu.text.Transliterator;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,7 +37,7 @@ public class ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.ServiceV
     public void onBindViewHolder(@NonNull ServiceViewHolder holder, int position) {
         holder.ServiceName.setText(serviceArrayList.get(position).getSname());
         holder.ServiceLocation.setText(serviceArrayList.get(position).getLocation());
-        holder.ServicePrice.setText(serviceArrayList.get(position).getPrice());
+        holder.ServiceSprice.setText(serviceArrayList.get(position).getSprice());
 
         Glide.with(context)
                 .load(serviceArrayList.get(position).getSimage())
@@ -54,14 +53,14 @@ public class ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.ServiceV
 
         TextView ServiceName;
         TextView ServiceLocation;
-        TextView ServicePrice;
+        TextView ServiceSprice;
         ImageView ServiceImage;
 
         public ServiceViewHolder(@NonNull View itemView) {
             super(itemView);
             ServiceName = itemView.findViewById(R.id.serviceNameView);
             ServiceLocation = itemView.findViewById(R.id.serviceLocationView);
-            ServicePrice = itemView.findViewById(R.id.servicePriceView);
+            ServiceSprice = itemView.findViewById(R.id.servicePriceView);
             ServiceImage = itemView.findViewById(R.id.serviceImage);
         }
     }

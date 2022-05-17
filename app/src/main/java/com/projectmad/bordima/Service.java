@@ -3,18 +3,18 @@ package com.projectmad.bordima;
 import android.net.Uri;
 
 public class Service {
-    String pid,sname,simage,location,contactno, price;
+    String pid,sname,simage,location,contactno, sprice;
 
     public Service() {
     }
 
-    public Service(String pid, String sname, String simage, String location, String contactno, String price) {
+    public Service(String pid, String sname, String simage, String location, String contactno, String sprice) {
         this.pid = pid;
         this.sname = sname;
         this.simage = simage;
         this.location = location;
         this.contactno = contactno;
-        this.price = price;
+        this.sprice = sprice;
     }
 
     public String getPid() {
@@ -57,11 +57,11 @@ public class Service {
         this.contactno = contactno;
     }
 
-    public String getPrice() {
-        return price;
+    public String getSprice() {
+        return sprice;
     }
 
-    public void setPrice(String price) {
-        this.price = price;
+    public void setSprice(String sprice) {
+        this.sprice = sprice;
     }
 }
