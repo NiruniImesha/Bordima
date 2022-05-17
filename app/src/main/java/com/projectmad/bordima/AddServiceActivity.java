@@ -193,7 +193,7 @@ public class AddServiceActivity extends AppCompatActivity {
     private void SaveProductInfoToDatabase()
     {
         HashMap<String, Object> serviceMap = new HashMap<>();
-        serviceMap.put("pid", ServiceRandomKey);
+        serviceMap.put("sid", ServiceRandomKey);
         serviceMap.put("date", saveCurrentDate);
         serviceMap.put("time", saveCurrentTime);
         serviceMap.put("sname", ServiceName);

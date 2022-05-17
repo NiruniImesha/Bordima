@@ -26,6 +26,7 @@
         android:id="@+id/ServiceName"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:background="@drawable/input_design"
         android:hint="@string/name"
         android:importantForAutofill="no"
         android:inputType="text"
@@ -37,28 +38,13 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
-
-    <EditText
-        android:id="@+id/Servicedescription"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:hint="@string/description"
-        android:inputType="textLongMessage"
-        android:paddingStart="20dp"
-        android:textColorHint="@color/btn_primary"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.465" />
+        app:layout_constraintVertical_bias="0.394" />
 
     <EditText
         android:id="@+id/ServiceContactNo"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:background="@drawable/input_design"
         android:hint="@string/contact_number"
         android:inputType="textUri"
         android:paddingStart="20dp"
@@ -69,13 +55,15 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.667" />
+        app:layout_constraintVertical_bias="0.689" />
 
     <EditText
         android:id="@+id/ServiceLocation"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:background="@drawable/input_design"
         android:hint="@string/location"
+        android:importantForAutofill="no"
         android:inputType="textUri"
         android:paddingStart="20dp"
         android:textColorHint="@color/btn_primary"
@@ -85,8 +73,24 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.564"
-        android:importantForAutofill="no" />
+        app:layout_constraintVertical_bias="0.587" />
+
+    <EditText
+        android:id="@+id/Servicedescription"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/input_design"
+        android:hint="@string/description"
+        android:inputType="textLongMessage"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/btn_primary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.487" />
 
     <Button
         android:id="@+id/ServiceNext"
@@ -97,6 +101,7 @@
         android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="bold"
+        android:background="@drawable/buttons"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.881"

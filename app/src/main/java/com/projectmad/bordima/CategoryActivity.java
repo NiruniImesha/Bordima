@@ -13,7 +13,7 @@ public class CategoryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_category);
 
         bordingHouseBtn = (Button) findViewById(R.id.btnBordingHouse);
         foodBtn = (Button) findViewById(R.id.btnFood);
@@ -22,7 +22,7 @@ public class CategoryActivity extends AppCompatActivity {
         bordingHouseBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CategoryActivity.this,AddBoardingActivity.class);
+                Intent intent = new Intent(CategoryActivity.this,AddServiceActivity.class);
                 intent.putExtra("category","Boarding");
                 startActivity(intent);
             }
