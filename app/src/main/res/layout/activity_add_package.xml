@@ -25,7 +25,10 @@
         android:id="@+id/ServicePackageName"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:background="@drawable/input_design2"
         android:hint="@string/package_name"
+        android:importantForAutofill="no"
+        android:inputType="text"
         android:paddingStart="20dp"
         android:textColorHint="@color/btn_primary"
         android:textStyle="bold"
@@ -34,15 +37,16 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.387"
-        android:inputType="text"
-        android:importantForAutofill="no" />
+        app:layout_constraintVertical_bias="0.419" />
 
     <EditText
         android:id="@+id/ServicePrice"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:background="@drawable/input_design2"
         android:hint="@string/price"
+        android:importantForAutofill="no"
+        android:inputType="text"
         android:paddingStart="20dp"
         android:textColorHint="@color/btn_primary"
         android:textStyle="bold"
@@ -51,15 +55,13 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.466"
-        android:inputType="text"
-        android:importantForAutofill="no" />
+        app:layout_constraintVertical_bias="0.498" />
 
     <Button
         android:id="@+id/ServiceAddPackage"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:backgroundTint="@color/btn_primary"
+        android:background="@drawable/buttons"
         android:text="@string/plus"
         android:textColor="@color/white"
         android:textSize="15sp"
@@ -69,17 +71,17 @@
         app:layout_constraintHorizontal_bias="0.914"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.564" />
+        app:layout_constraintVertical_bias="0.596" />
 
     <Button
         android:id="@+id/ServicePublishBtn"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:backgroundTint="@color/btn_primary"
         android:text="@string/publish"
         android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="bold"
+        android:background="@drawable/buttons"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.881"
