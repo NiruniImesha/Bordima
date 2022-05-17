@@ -14,14 +14,19 @@
         android:theme="@style/Theme.Bordima"
         tools:replace="android:appComponentFactory"
         tools:targetApi="p">
+              <activity
+            android:name=".AddPackageActivity"
+
+        tools:replace="android:appComponentFactory">
         <activity
             android:name=".CategoryActivity"
             android:exported="false" />
         <activity
-            android:name=".AddPackageActivity"
+            android:name=".ServiceActivity"
             android:exported="false" />
         <activity
             android:name=".AddServiceActivity"
+
             android:exported="false" />
         <activity
             android:name=".MainActivity"

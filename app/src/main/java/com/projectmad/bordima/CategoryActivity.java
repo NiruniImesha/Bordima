@@ -23,6 +23,7 @@ public class CategoryActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CategoryActivity.this,AddServiceActivity.class);
+
                 intent.putExtra("category","Boarding");
                 startActivity(intent);
             }
