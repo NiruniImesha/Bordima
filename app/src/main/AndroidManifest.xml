@@ -14,10 +14,9 @@
         android:theme="@style/Theme.Bordima"
         tools:replace="android:appComponentFactory"
         tools:targetApi="p">
-              <activity
+        <activity
             android:name=".AddPackageActivity"
-
-        tools:replace="android:appComponentFactory">
+        tools:replace="android:appComponentFactory"/>
         <activity
             android:name=".CategoryActivity"
             android:exported="false" />
