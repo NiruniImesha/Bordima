@@ -93,6 +93,38 @@
                 android:textSize="16dp"
                 android:textColor="@color/black"/>
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/feedbackrv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/package_price"/>
+
+            <Button
+                android:id="@+id/leavefeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leave Feedback"
+                android:layout_below="@id/feedbackrv"
+                android:layout_marginEnd="5dp"/>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log out"
+                android:layout_below="@id/feedbackrv"
+                android:layout_toRightOf="@id/leavefeedback"
+                android:layout_marginEnd="5dp"/>
+
+            <Button
+                android:id="@+id/allservices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All services"
+                android:layout_below="@id/feedbackrv"
+                android:layout_toRightOf="@id/logout"
+                android:layout_marginEnd="10dp"/>
+
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>

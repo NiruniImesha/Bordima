@@ -33,7 +33,7 @@ public class ServiceActivity extends AppCompatActivity {
     private ArrayList<Service> serviceArrayList;
     private ServiceAdapter serviceAdapter;
     private Context context;
-    private Button AddButton;
+    private Button AddButton, BoardingBtn;
 
 
     @Override
@@ -55,6 +55,7 @@ public class ServiceActivity extends AppCompatActivity {
 
         //Add button
         AddButton = (Button) findViewById(R.id.add);
+        BoardingBtn = (Button) findViewById(R.id.boarding);
 
         //clear ArrayList
         clearAll();
@@ -66,6 +67,14 @@ public class ServiceActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ServiceActivity.this,CategoryActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        BoardingBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ServiceActivity.this,BoardingActivity.class);
                 startActivity(intent);
             }
         });
