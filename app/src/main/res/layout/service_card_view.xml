@@ -41,15 +41,15 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/serviceNameView"
-            android:layout_toEndOf="@id/serviceImage"
-            android:layout_marginTop="2dp"
             android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/serviceImage"
             android:outlineProvider="paddedBounds"
             android:text="Location"
             android:textAlignment="viewStart"
+            android:textAllCaps="false"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            android:textAllCaps="false"/>
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/servicePriceView"
@@ -63,7 +63,8 @@
             android:textAlignment="viewStart"
             android:textAllCaps="false"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
+
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

@@ -25,8 +25,10 @@
             android:exported="false" />
         <activity
             android:name=".AddServiceActivity"
-
             android:exported="false" />
+        <activity
+            android:name=".BoardingActivity"
+            android:exported="false"/>
         <activity
             android:name=".ServiceActivity"
             android:exported="true">

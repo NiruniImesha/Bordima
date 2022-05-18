@@ -217,7 +217,7 @@ public class AddServiceActivity extends AppCompatActivity {
                     {
                         if (task.isSuccessful())
                         {
-                            Intent intent = new Intent(AddServiceActivity.this, AddPackageActivity.class);
+                            Intent intent = new Intent(AddServiceActivity.this, ServiceActivity.class);
                             startActivity(intent);
 
                             loadingBar.dismiss();
