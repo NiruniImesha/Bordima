@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< Updated upstream
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+=======
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> Stashed changes
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<<<<<<< Updated upstream
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,3 +21,74 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+=======
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/logobordima"
+        android:contentDescription="@string/applogo" />
+    <TextView
+        android:id="@+id/slogan"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appLogo"
+        android:text="@string/lets_pick_a_boarding"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/slogan2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slogan"
+        android:text="@string/nation_wide_bording_and_service_app"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/ash"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slogan2"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttons"
+        android:textAllCaps="false"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupBtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttons"
+        android:textAllCaps="false"
+        android:text="@string/already_have_an_account_login"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+
+
+
+</RelativeLayout>
+>>>>>>> Stashed changes

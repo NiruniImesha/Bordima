@@ -1,9 +1,33 @@
 <resources>
     <string name="app_name">Bordima</string>
+<<<<<<< Updated upstream
     <string name="hi">Hi!</string>
     <string name="enter_user_name">Enter User Name</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
     <string name="login">Login</string>
     <string name="new_user_register_here">New User ? Register Here</string>
+=======
+    <string name="applogo">appLogo</string>
+    <string name="lets_pick_a_boarding">Lets pick a Boarding..</string>
+    <string name="nation_wide_bording_and_service_app">Nation wide bording and service app</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account_login">Already have an account ? Login</string>
+    <string name="delete_promotion">Delete Promotion</string>
+    <string name="promotionbanner">promotionBanner</string>
+    <string name="promotions_dashbord">PROMOTIONS DASHBORD</string>
+    <string name="new_promotion">New Promotion</string>
+    <string name="logout">Logout</string>
+    <string name="post_bording_ad_here">POST BORDING AD HERE</string>
+    <string name="title">Title</string>
+    <string name="select_image">Select Image</string>
+    <string name="selectedimg">selectedImg</string>
+    <string name="bedrooms">BedRooms</string>
+    <string name="bathrooms">BathRooms</string>
+    <string name="kitchens">Kitchens</string>
+    <string name="location">Location</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="description">Description</string>
+    <string name="post">POST</string>
+>>>>>>> Stashed changes
 </resources>

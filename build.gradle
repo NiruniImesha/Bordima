@@ -1,4 +1,14 @@
 buildscript {
+<<<<<<< Updated upstream
+=======
+
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+>>>>>>> Stashed changes
     dependencies {
         classpath 'com.google.gms:google-services:4.3.10'
     }

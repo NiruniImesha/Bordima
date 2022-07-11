@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBordingActivity">
+
+    <TextView
+        android:id="@+id/solganPostBordingAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/post_bording_ad_here"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/BordingTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/solganPostBordingAdd"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_design"
+        android:hint="@string/title"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        tools:ignore="Autofill,RtlSymmetry" />
+
+    <LinearLayout
+        android:id="@+id/selectImgPanel"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/BordingTitle"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/AddImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/select_image"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/buttons"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/BordingImageBtn"
+            android:layout_width="37dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/selectedimg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bedBathPanel"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/selectImgPanel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <EditText
+            android:background="@drawable/input_design"
+            android:id="@+id/BedRooms"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="@string/bedrooms"
+            android:textAlignment="center"
+            android:inputType="textLongMessage"
+            tools:ignore="Autofill,RtlHardcoded" />
+
+        <EditText
+            android:background="@drawable/input_design"
+            android:id="@+id/BathRooms"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="@string/bathrooms"
+            android:inputType="textLongMessage"
+            android:textAlignment="center"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:background="@drawable/input_design"
+            android:id="@+id/Kitchens"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="@string/kitchens"
+            android:inputType="textLongMessage"
+            android:textAlignment="center"
+            tools:ignore="Autofill,RtlHardcoded" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/BordingLocation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bedBathPanel"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_design"
+        android:hint="@string/location"
+        android:inputType="textUri"
+        android:paddingStart="20dp"
+        tools:ignore="Autofill,RtlSymmetry" />
+
+
+    <EditText
+        android:id="@+id/BordingContactNo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/BordingLocation"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_design"
+        android:hint="@string/contact_number"
+        android:inputType="textUri"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:id="@+id/BordingPrice"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/BordingContactNo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_design"
+        android:hint="Price"
+        android:inputType="textLongMessage"
+        android:paddingLeft="20dp"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+
+    <EditText
+        android:id="@+id/BordingDescription"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/BordingPrice"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_design"
+        android:hint="@string/description"
+        android:inputType="textLongMessage"
+        android:paddingLeft="20dp"
+        tools:ignore="Autofill,RtlHardcoded,RtlSymmetry" />
+
+
+    <Button
+        android:id="@+id/PostBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BordingDescription"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttons"
+        android:text="@string/post"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>
