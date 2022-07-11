@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightgrey">
+
+    <ImageView
+        android:id="@+id/imageViewBording"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:contentDescription="bImageBanner"
+        android:scaleType="centerCrop" />
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_toRightOf="@id/imageViewBording"
+
+        >
+        <TextView
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/bordingTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/ash"
+            android:textSize="17sp"
+            />
+        <TextView
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/bordingPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/ash"
+            android:textSize="17sp"
+            />
+        <TextView
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/bordingLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/ash"
+            android:textSize="17sp"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< Updated upstream
         <entry key="..\:/AndroidStudio/Github/Bordima/app/src/main/res/drawable/custom_button_back.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/Github/Bordima/app/src/main/res/drawable/progress_back.xml" value="0.1475" />
         <entry key="..\:/AndroidStudio/Github/Bordima/app/src/main/res/layout/activity_add_promotion.xml" value="0.264" />
@@ -16,6 +17,30 @@
         <entry key="..\:/Bordima App/Bordima/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Bordima App/Bordima/app/src/main/res/layout/activity_signup.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/niruni/Documents/GitHub/github.com/Bordima/app/src/main/res/layout/activity_main.xml" value="0.2359375" />
+=======
+        <entry key="..\:/AndroidStudio/Bordima/app/src/main/res/drawable/buttons.xml" value="0.1995" />
+        <entry key="..\:/AndroidStudio/Bordima/app/src/main/res/layout/activity_add_bording.xml" value="0.25" />
+        <entry key="..\:/AndroidStudio/Bordima/app/src/main/res/layout/activity_add_new_promotion.xml" value="0.25" />
+        <entry key="..\:/AndroidStudio/Bordima/app/src/main/res/layout/activity_admin_panel.xml" value="0.16304347826086957" />
+        <entry key="..\:/AndroidStudio/Bordima/app/src/main/res/layout/activity_home.xml" value="0.16304347826086957" />
+        <entry key="..\:/AndroidStudio/Bordima/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/AndroidStudio/Bordima/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/AndroidStudio/Bordima/app/src/main/res/layout/activity_promotions.xml" value="0.2" />
+        <entry key="..\:/AndroidStudio/Bordima/app/src/main/res/layout/activity_register.xml" value="0.16304347826086957" />
+        <entry key="..\:/AndroidStudio/Bordima/app/src/main/res/layout/bording_add.xml" value="0.25" />
+        <entry key="..\:/AndroidStudio/Bordima/app/src/main/res/layout/promotion_item.xml" value="0.17916666666666667" />
+        <entry key="..\:/Projects/Bordima-Android-App/app/src/main/res/drawable/buttons.xml" value="0.203" />
+        <entry key="..\:/Projects/Bordima-Android-App/app/src/main/res/layout/activity_bording.xml" value="0.13854166666666667" />
+        <entry key="..\:/Projects/Bordima-Android-App/app/src/main/res/layout/activity_bottom_navigation_bar.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projects/Bordima-Android-App/app/src/main/res/layout/activity_delete_promotion.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projects/Bordima-Android-App/app/src/main/res/layout/activity_home.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projects/Bordima-Android-App/app/src/main/res/layout/activity_home2.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projects/Bordima-Android-App/app/src/main/res/layout/bording_add.xml" value="0.10885416666666667" />
+        <entry key="..\:/Projects/Bordima-Android-App/app/src/main/res/layout/fragment_boarding.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projects/Bordima-Android-App/app/src/main/res/layout/fragment_profile.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projects/Bordima-Android-App/app/src/main/res/layout/fragment_service.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projects/Bordima-Android-App/app/src/main/res/layout/promotion_item.xml" value="0.13854166666666667" />
+>>>>>>> Stashed changes
       </map>
     </option>
   </component>
