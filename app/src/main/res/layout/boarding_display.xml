@@ -10,9 +10,9 @@
     android:orientation="vertical">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/service_recyclerView"
-        android:layout_width="405dp"
-        android:layout_height="711dp"
+        android:id="@+id/boarding_recyclerView"
+        android:layout_width="409dp"
+        android:layout_height="715dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -36,19 +36,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.98" />
 
-    <Button
-        android:id="@+id/boarding"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:background="@drawable/buttons"
-        android:text="Boarding"
-        android:textColor="@color/white"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.022"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.004" />
 </androidx.constraintlayout.widget.ConstraintLayout>
