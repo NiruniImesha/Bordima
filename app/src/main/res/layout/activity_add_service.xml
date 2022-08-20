@@ -127,7 +127,7 @@
         android:layout_height="50dp"
         android:background="@drawable/buttons"
         android:backgroundTint="@color/btn_primary"
-        android:text="@string/next"
+        android:text="Publish"
         android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="bold"
