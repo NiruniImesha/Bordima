@@ -6,5 +6,5 @@
         android:width="4dp"
         android:color="@color/teal_700" />
 
-    <solid android:color="@color/white"></solid>
+
 </shape>
