@@ -9,7 +9,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.play.core.review.ReviewInfo;
 import com.google.android.play.core.review.ReviewManager;
@@ -32,17 +35,35 @@ public class HomeActivity extends AppCompatActivity {
     ArrayList<Feedback> FeedbackArrayList;
     //Feedback list
 
-    private Button logout_btn,feedback;
+    private Button logout_btn,feedback, Service;
+
+    //service ui views
+    private TextView serviceName, serviceDes, serviceLoc, serviceCont, packageName, packagePrice;
+    private ImageView serviceImg, packageImg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_home);
 
-            logout_btn = (Button) findViewById(R.id.logout_btn);
-            feedback = (Button) findViewById(R.id.feedback);
+            //logout_btn = (Button) findViewById(R.id.logout);
+            feedback = (Button) findViewById(R.id.leavefeedback);
+            //Service = (Button) findViewById(R.id.allservices);
 
-            recyclerView = findViewById(R.id.FeedbackList);
+            //text views (service)
+            serviceName = (TextView) findViewById(R.id.service_name);
+            serviceDes = (TextView) findViewById(R.id.service_description);
+            serviceLoc = (TextView) findViewById(R.id.service_location);
+            serviceCont = (TextView) findViewById(R.id.service_contact);
+            packageName = (TextView) findViewById(R.id.package_name);
+            packagePrice = (TextView) findViewById(R.id.package_price);
+
+            //image views(service)
+            serviceImg = (ImageView) findViewById(R.id.service_image);
+            packageImg = (ImageView) findViewById(R.id.package_image);
+
+            recyclerView = findViewById(R.id.feedbackrv);
             recyclerView.setHasFixedSize(true);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -52,6 +73,7 @@ public class HomeActivity extends AppCompatActivity {
             feedbackAdapter = new FeedbackAdapter(HomeActivity.this,FeedbackArrayList);
             recyclerView.setAdapter(feedbackAdapter);
 
+            //get data as snapshots from the database
             RootRef.addChildEventListener(new ChildEventListener() {
                 @Override
                 public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
@@ -82,13 +104,13 @@ public class HomeActivity extends AppCompatActivity {
 
             });
 
-            logout_btn.setOnClickListener(new View.OnClickListener() {
+            /*logout_btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(HomeActivity.this, MainActivity.class);
                     startActivity(intent);
                 }
-            });
+            });*/
 
             feedback.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -97,6 +119,14 @@ public class HomeActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
+
+            /*Service.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(HomeActivity.this, ServiceActivity.class);
+                    startActivity(intent);
+                }
+            });*/
         }
 
 }

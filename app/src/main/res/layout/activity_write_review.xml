@@ -12,7 +12,7 @@
         android:id="@+id/profileIv"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/house"
+        android:src="@drawable/burger"
         android:layout_marginTop="50dp"
         android:layout_gravity="center_horizontal"
         app:civ_border_color="@color/teal_700"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Shop Name"
+        android:text="Burger Hut"
         android:textColor="@color/teal_700"
         android:textSize="20sp"
         android:textStyle="bold"/>

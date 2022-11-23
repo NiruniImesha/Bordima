@@ -1,44 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:cardElevation="15dp"
+        tools:context=".HomeActivity">
 
-    <Button
-        android:id="@+id/feedback"
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="723dp">
+
+        <TextView
+            android:id="@+id/service_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Burger Hut "
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/service_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/service_name"
+            android:layout_marginTop="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/burger" />
+
+        <TextView
+            android:id="@+id/service_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_image"
+            android:text="Dine-in and take-away"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/service_location"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_description"
+            android:layout_marginTop="2dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:outlineProvider="paddedBounds"
+            android:text="Kandy-road, Malabe(near to SLIIT)"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/service_contact"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_description"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/service_location"
+            android:text="077-8956785"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/package_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/service_contact"
+            android:layout_marginTop="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food1" />
+
+        <TextView
+            android:id="@+id/package_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/package_image"
+            android:text="Package 1"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/package_price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/package_name"
+            android:text="Rs.500/="
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/feedbackrv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/package_price" />
+
+        <Button
+            android:id="@+id/leavefeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feedbackrv"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/round_btn_filled"
+            android:text="Leave Feedback" />
+        <!--<Button
+        android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:text="Leave Feedback"
-        app:layout_constraintBottom_toTopOf="@+id/FeedbackList"
-        app:layout_constraintEnd_toStartOf="@+id/logout_btn"
-        app:layout_constraintHorizontal_bias="0.307"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.826" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/FeedbackList"
-        android:layout_width="360dp"
-        android:layout_height="562dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.905" />
-
-    <Button
-        android:id="@+id/logout_btn"
+        android:text="Log out"
+        android:layout_below="@id/feedbackrv"
+        android:layout_toRightOf="@id/leavefeedback"
+        android:layout_marginEnd="5dp"/>-->
+        <!--<Button
+        android:id="@+id/allservices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Logout"
-        app:layout_constraintBottom_toTopOf="@+id/FeedbackList"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.764"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.82" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="All services"
+        android:layout_below="@id/feedbackrv"
+        android:layout_toRightOf="@id/logout"
+        android:layout_marginEnd="10dp"/>-->
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+

@@ -16,6 +16,7 @@
 
     <com.rey.material.widget.EditText
         android:id="@+id/register_username_input"
+        android:background="@drawable/input_design"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/register_applogo"
@@ -31,6 +32,7 @@
 
     <com.rey.material.widget.EditText
         android:id="@+id/register_phone_number_input"
+        android:background="@drawable/input_design"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/register_username_input"
@@ -48,6 +50,7 @@
 
     <com.rey.material.widget.EditText
         android:id="@+id/register_password_input"
+        android:background="@drawable/input_design"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/register_phone_number_input"

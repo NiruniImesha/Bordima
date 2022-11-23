@@ -35,6 +35,7 @@ public class FeedbackAdapter extends RecyclerView.Adapter<FeedbackAdapter.Feedba
         return new FeedbackViewHolder(v);
     }
 
+    //bind data to the card view
     @Override
     public void onBindViewHolder(@NonNull FeedbackAdapter.FeedbackViewHolder holder, int position) {
         Feedback feedback = FeedbackArrayList.get(position);
@@ -45,6 +46,7 @@ public class FeedbackAdapter extends RecyclerView.Adapter<FeedbackAdapter.Feedba
 
     }
 
+    //no of card items in recycler view
     @Override
     public int getItemCount() {
         return FeedbackArrayList.size();

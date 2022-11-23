@@ -123,7 +123,7 @@ public class Login_activity extends AppCompatActivity {
                             Toast.makeText(Login_activity.this, "logged in Successfully...", Toast.LENGTH_SHORT).show();
                             loadingBar.dismiss();
 
-                            Intent intent = new Intent(Login_activity.this, HomeActivity.class);
+                            Intent intent = new Intent(Login_activity.this, ServiceActivity.class);
                             startActivity(intent);
                         }
                         else
